@@ -1,0 +1,16 @@
+body{
+	background-color: #FE2E2E;
+}
+.high1{
+    margin-top:300px;
+    font-size:150%;
+}
+.high2{
+    margin-top:150px;
+    
+}
+button{
+    cursor: pointer;
+    padding: 8px 32px;
+    font-size: 150%
+}

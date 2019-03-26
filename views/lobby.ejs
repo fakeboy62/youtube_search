@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class = "high1" style = "text-align: center;">
+    <p><h1>유튜브 검색 페이지</h1></p>
+    <% if(sess) { %>
+        <button><a href = "/logout">로그아웃</a></button>   
+        <% } %>
+    <div class = "high2" style = "text-align: center;">
+    <% if(!sess) { %>
+    <button><a href = "/logins">로그인</a></button>
+    <% } %>
+    
+    <% if(!sess) { %>
+    <button><a href = "/register">회원가입</a></button>
+    <% } %>
+    
+    </div>
+    <% if(sess){ %>
+        <h2>환영합니다! <%= sess %> 님</h2>
+        <button><a href="/youtube_search">유튜브 검색</a></button>
+    <% }else{ %>
+        <h2> 로그인 해주세요. </h2>
+    <% } %>
+</div>
+</body>
+</html>
